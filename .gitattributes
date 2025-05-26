@@ -1,5 +1,4 @@
 # Unity-specific settings
-
 # Treat binary files correctly
 *.unity binary
 *.prefab binary
@@ -15,7 +14,6 @@
 *.wav binary
 *.dll binary
 *.exe binary
-
 # Scripts and text files
 *.cs text
 *.shader text
@@ -25,20 +23,16 @@
 *.xml text
 *.asmdef text
 *.rsp text
-
 # Force Unity to treat YAML consistently
 *.unity merge=unityyamlmerge eol=lf
 *.prefab merge=unityyamlmerge eol=lf
 *.asset merge=unityyamlmerge eol=lf
 *.anim merge=unityyamlmerge eol=lf
 *.controller merge=unityyamlmerge eol=lf
-
 # Unity smart merge tool config
 *.meta merge=unityyamlmerge eol=lf
-
 # Force LF line endings for consistent cross-platform behavior
 * text=auto eol=lf
-
 # Track large assets with Git LFS
 *.psd filter=lfs diff=lfs merge=lfs -text
 *.png filter=lfs diff=lfs merge=lfs -text
